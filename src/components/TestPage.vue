@@ -1,9 +1,9 @@
 <template>
   <div>TestPage
     <hr>
-    <CompA :x2="x2"/>
+    <CompA :xOfCompA="xOfTestPage"/>
     <hr>
-    <CompB v-on:counted="counted"/>
+    <CompB v-on:counted="handleCounted"/>
     <hr>
   </div>
 </template>
@@ -18,12 +18,12 @@ export default {
   components: { CompA, CompB },
   data () {
     return {
-      x2: 7
+      xOfTestPage: 7
     }
   },
   methods: {
-      counted: function (x1FromCompB) {
-          this.x2 = x1FromCompB
+      handleCounted: function (x1FromCompB) {
+          this.xOfTestPage = x1FromCompB
       }
   }
 }

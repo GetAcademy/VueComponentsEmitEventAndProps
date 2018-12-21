@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
       Comp A
-      <h1>{{x2}}</h1>
+      <h1>{{xOfCompA}}</h1>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
       msg: 'Welcome to Your Vue.js App'
     }
   },
-  props: ['x2']
+  props: ['xOfCompA']
 }
 </script>
 

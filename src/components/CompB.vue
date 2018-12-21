@@ -2,7 +2,7 @@
   <div class="hello">
       Comp B
       <button @click="count()">+</button>
-      <h1>{{x1}}</h1>
+      <h1>{{xOfCompB}}</h1>
   </div>
 </template>
 
@@ -11,13 +11,13 @@ export default {
   name: 'CompB',
   data () {
     return {
-      x1: 0
+      xOfCompB: 0
     }
   },
   methods: {
     count: function () {
-      this.x1++
-      this.$emit('counted', this.x1)
+      this.xOfCompB++
+      this.$emit('counted', this.xOfCompB)
     }
   }
 }
